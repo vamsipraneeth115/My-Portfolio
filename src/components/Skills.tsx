@@ -4,6 +4,7 @@ const categories = [
   { name: "Languages", skills: ["Python", "C", "C++", "Java", "JavaScript", "SQL", "HTML/CSS"] },
   { name: "Frameworks", skills: ["React", "FastAPI", "Flask", "Bootstrap"] },
   { name: "Tools & Databases", skills: ["VS Code", "Docker", "Jenkins", "Git", "GitHub", "PostgreSQL", "Tableau"] },
+  { name: "Coursework", skills: ["DSA", "DBMS", "OS", "OOP", "Computer Networks", "AI/ML", "Software Engineering"] },
 ];
 
 const Skills = () => (
@@ -15,10 +16,10 @@ const Skills = () => (
         viewport={{ once: true }}
         className="text-3xl md:text-4xl font-bold text-center mb-12"
       >
-        Skills & Technologies
+        Skills, Technologies & Coursework
       </motion.h2>
 
-      <div className="grid md:grid-cols-3 gap-8">
+      <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
         {categories.map((cat, ci) => (
           <motion.div
             key={cat.name}

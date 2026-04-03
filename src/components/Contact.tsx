@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { Send, Mail, Github, Linkedin } from "lucide-react";
+import { Send, Mail, Code2, Github, Linkedin } from "lucide-react";
 
 const Contact = () => {
   const [form, setForm] = useState({ name: "", email: "", message: "" });
@@ -69,11 +69,14 @@ const Contact = () => {
             <a href="mailto:ccvp@example.com" className="p-3 rounded-full bg-card border border-border hover:border-primary/50 transition-colors">
               <Mail size={18} className="text-muted-foreground" />
             </a>
-            <a href="https://github.com/vamsipraneeth" target="_blank" rel="noopener noreferrer" className="p-3 rounded-full bg-card border border-border hover:border-primary/50 transition-colors">
+            <a href="https://github.com/vamsipraneeth115" target="_blank" rel="noopener noreferrer" className="p-3 rounded-full bg-card border border-border hover:border-primary/50 transition-colors">
               <Github size={18} className="text-muted-foreground" />
             </a>
-            <a href="https://linkedin.com/in/ccvp" target="_blank" rel="noopener noreferrer" className="p-3 rounded-full bg-card border border-border hover:border-primary/50 transition-colors">
+            <a href="https://www.linkedin.com/in/ch-vamsi-praneeth-8074b3305" target="_blank" rel="noopener noreferrer" className="p-3 rounded-full bg-card border border-border hover:border-primary/50 transition-colors">
               <Linkedin size={18} className="text-muted-foreground" />
+            </a>
+            <a href="https://leetcode.com/u/CH_VAMSIPRANEETH/" target="_blank" rel="noopener noreferrer" className="p-3 rounded-full bg-card border border-border hover:border-primary/50 transition-colors">
+              <Code2 size={18} className="text-muted-foreground" />
             </a>
           </div>
         </motion.div>

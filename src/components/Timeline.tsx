@@ -1,24 +1,18 @@
 import { motion } from "framer-motion";
-import { GraduationCap, Award } from "lucide-react";
+import { GraduationCap } from "lucide-react";
 
 const items = [
   {
     icon: GraduationCap,
     title: "Dayananda Sagar College of Engineering",
     subtitle: "B.E. in Computer Science & Engineering",
-    detail: "CGPA: 9.44 | 2023 – Present",
+    detail: "CGPA: 9.44 | 2023 - Present",
   },
   {
     icon: GraduationCap,
     title: "Narayana Junior College",
     subtitle: "Intermediate (MPC)",
-    detail: "97.2% | 2021 – 2023",
-  },
-  {
-    icon: Award,
-    title: "Certifications",
-    subtitle: "Professional Development",
-    detail: "Web Development (Udemy) · Information Security (Great Learning) · Linux Training (Spoken Tutorial, IIT Bombay) · OCI AI Foundations (Oracle)",
+    detail: "97.2% | 2021 - 2023",
   },
 ];
 
@@ -31,7 +25,7 @@ const Timeline = () => (
         viewport={{ once: true }}
         className="text-3xl md:text-4xl font-bold text-center mb-12"
       >
-        Education & Certifications
+        Education
       </motion.h2>
 
       <div className="max-w-2xl mx-auto relative">

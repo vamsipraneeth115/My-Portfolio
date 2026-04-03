@@ -6,13 +6,13 @@ const projects = [
     title: "FinGaze",
     desc: "An AI-driven stock portfolio risk classifier leveraging Deep Reinforcement Learning (FinRL) to categorize stocks into risk tiers and optimize portfolio allocation with real-time data visualization.",
     tech: ["Python", "FinRL", "Reinforcement Learning", "Data Visualization"],
-    github: "#",
+    github: "https://github.com/vamsipraneeth115/Fin-Gaze.git",
   },
   {
     title: "PresentationCore",
     desc: "An AI-powered presentation analyzer that evaluates slide design, content quality, and delivery patterns using ML models. Features React frontend with FastAPI backend and PostgreSQL storage.",
     tech: ["React", "FastAPI", "PostgreSQL", "Machine Learning"],
-    github: "#",
+    github: "https://github.com/vamsipraneeth115/Presentationscore.git",
   },
 ];
 

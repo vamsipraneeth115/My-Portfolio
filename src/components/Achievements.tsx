@@ -1,10 +1,11 @@
 import { motion } from "framer-motion";
-import { Trophy, BookOpen, Star } from "lucide-react";
+import { Award } from "lucide-react";
 
 const items = [
-  { icon: Star, title: "9.44 CGPA", desc: "Dayananda Sagar College of Engineering" },
-  { icon: Trophy, title: "97.2% Intermediate", desc: "Narayana Junior College, MPC" },
-  { icon: BookOpen, title: "Key Coursework", desc: "DSA, DBMS, OS, OOP, Computer Networks, AI/ML, Software Engineering" },
+  { title: "Web Development", desc: "Skill Vertex" },
+  { title: "Information Security A-Z", desc: "Infosys Springboard" },
+  { title: "Complete UNIX & Linux OS Fundamentals", desc: "Infosys Springboard" },
+  { title: "OCI AI Foundations", desc: "Oracle" },
 ];
 
 const Achievements = () => (
@@ -16,10 +17,10 @@ const Achievements = () => (
         viewport={{ once: true }}
         className="text-3xl md:text-4xl font-bold text-center mb-12"
       >
-        Achievements
+        Certifications
       </motion.h2>
 
-      <div className="grid sm:grid-cols-3 gap-6 max-w-3xl mx-auto">
+      <div className="grid sm:grid-cols-2 gap-6 max-w-4xl mx-auto">
         {items.map((item, i) => (
           <motion.div
             key={item.title}
@@ -30,10 +31,10 @@ const Achievements = () => (
             className="text-center p-6 rounded-xl border border-border bg-card hover:border-primary/50 transition-colors"
           >
             <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-3">
-              <item.icon className="text-primary" size={22} />
+              <Award className="text-primary" size={22} />
             </div>
             <h3 className="font-bold text-lg">{item.title}</h3>
-            <p className="text-xs text-muted-foreground mt-1">{item.desc}</p>
+            <p className="text-sm text-muted-foreground mt-1">{item.desc}</p>
           </motion.div>
         ))}
       </div>
