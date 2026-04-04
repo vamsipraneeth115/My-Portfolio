@@ -23,7 +23,8 @@ const Contact = () => {
           Get In Touch
         </motion.h2>
         <p className="text-muted-foreground text-center mb-12 max-w-md mx-auto">
-          Have a project in mind or just want to say hi? I'd love to hear from you.
+          I'm open to internships, collaborations, and software development
+          opportunities. Feel free to reach out.
         </p>
 
         <motion.div
@@ -67,25 +68,44 @@ const Contact = () => {
 
           <div className="mt-6 flex items-center justify-center gap-2 text-muted-foreground">
             <Phone size={18} />
-            <a
-              href="tel:+917416052085"
-              className="transition-colors hover:text-primary"
-            >
+            <a href="tel:+917416052085" className="transition-colors hover:text-primary">
               +91 7416052085
             </a>
           </div>
 
+          <p className="text-center text-sm text-muted-foreground mt-3">
+            Call or message me directly for faster communication.
+          </p>
+
           <div className="flex items-center justify-center gap-4 mt-8">
-            <a href="mailto:ccvp@example.com" className="p-3 rounded-full bg-card border border-border hover:border-primary/50 transition-colors">
+            <a
+              href="mailto:ccvp@example.com"
+              className="p-3 rounded-full bg-card border border-border hover:border-primary/50 transition-colors"
+            >
               <Mail size={18} className="text-muted-foreground" />
             </a>
-            <a href="https://github.com/vamsipraneeth115" target="_blank" rel="noopener noreferrer" className="p-3 rounded-full bg-card border border-border hover:border-primary/50 transition-colors">
+            <a
+              href="https://github.com/vamsipraneeth115"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-3 rounded-full bg-card border border-border hover:border-primary/50 transition-colors"
+            >
               <Github size={18} className="text-muted-foreground" />
             </a>
-            <a href="https://www.linkedin.com/in/ch-vamsi-praneeth-8074b3305" target="_blank" rel="noopener noreferrer" className="p-3 rounded-full bg-card border border-border hover:border-primary/50 transition-colors">
+            <a
+              href="https://www.linkedin.com/in/ch-vamsi-praneeth-8074b3305"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-3 rounded-full bg-card border border-border hover:border-primary/50 transition-colors"
+            >
               <Linkedin size={18} className="text-muted-foreground" />
             </a>
-            <a href="https://leetcode.com/u/CH_VAMSIPRANEETH/" target="_blank" rel="noopener noreferrer" className="p-3 rounded-full bg-card border border-border hover:border-primary/50 transition-colors">
+            <a
+              href="https://leetcode.com/u/CH_VAMSIPRANEETH/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-3 rounded-full bg-card border border-border hover:border-primary/50 transition-colors"
+            >
               <Code2 size={18} className="text-muted-foreground" />
             </a>
           </div>

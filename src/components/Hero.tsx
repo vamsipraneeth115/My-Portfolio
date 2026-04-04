@@ -3,7 +3,12 @@ import { ArrowDown, Code2, Github, Linkedin } from "lucide-react";
 import { motion } from "framer-motion";
 import ParticleBackground from "./ParticleBackground";
 
-const titles = ["Software Developer", "Problem Solver", "AI Enthusiast", "Full-Stack Builder"];
+const titles = [
+  "Software Developer",
+  "Problem Solver",
+  "AI Enthusiast",
+  "Full-Stack Builder",
+];
 
 const Hero = () => {
   const [titleIndex, setTitleIndex] = useState(0);
@@ -15,7 +20,10 @@ const Hero = () => {
     let timeout: ReturnType<typeof setTimeout>;
 
     if (!deleting && displayed.length < current.length) {
-      timeout = setTimeout(() => setDisplayed(current.slice(0, displayed.length + 1)), 80);
+      timeout = setTimeout(
+        () => setDisplayed(current.slice(0, displayed.length + 1)),
+        80,
+      );
     } else if (!deleting && displayed.length === current.length) {
       timeout = setTimeout(() => setDeleting(true), 1800);
     } else if (deleting && displayed.length > 0) {
@@ -81,7 +89,9 @@ const Hero = () => {
               transition={{ delay: 0.8 }}
               className="text-muted-foreground max-w-lg mx-auto md:mx-0 mb-8"
             >
-              Building intelligent solutions, one line of code at a time.
+              Computer Science student focused on full-stack development,
+              AI-powered applications, and writing clean, practical software that
+              solves real problems.
             </motion.p>
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -89,20 +99,49 @@ const Hero = () => {
               transition={{ delay: 1 }}
               className="flex flex-wrap items-center justify-center md:justify-start gap-4"
             >
-              <a href="#projects" className="bg-primary text-primary-foreground px-6 py-3 rounded-lg font-medium hover:bg-primary/90 transition-colors">
+              <a
+                href="#projects"
+                className="bg-primary text-primary-foreground px-6 py-3 rounded-lg font-medium hover:bg-primary/90 transition-colors"
+              >
                 View Projects
               </a>
-              <a href="#contact" className="border border-border px-6 py-3 rounded-lg font-medium hover:bg-secondary transition-colors">
+              <a
+                href="/resume.pdf"
+                target="_blank"
+                rel="noreferrer"
+                className="border border-border px-6 py-3 rounded-lg font-medium hover:bg-secondary transition-colors"
+              >
+                View Resume
+              </a>
+              <a
+                href="#contact"
+                className="border border-border px-6 py-3 rounded-lg font-medium hover:bg-secondary transition-colors"
+              >
                 Contact Me
               </a>
               <div className="flex gap-3 md:ml-2">
-                <a href="https://github.com/vamsipraneeth115" target="_blank" rel="noopener noreferrer" className="p-2 rounded-full bg-secondary hover:bg-secondary/80 transition-colors">
+                <a
+                  href="https://github.com/vamsipraneeth115"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="p-2 rounded-full bg-secondary hover:bg-secondary/80 transition-colors"
+                >
                   <Github size={18} />
                 </a>
-                <a href="https://www.linkedin.com/in/ch-vamsi-praneeth-8074b3305" target="_blank" rel="noopener noreferrer" className="p-2 rounded-full bg-secondary hover:bg-secondary/80 transition-colors">
+                <a
+                  href="https://www.linkedin.com/in/ch-vamsi-praneeth-8074b3305"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="p-2 rounded-full bg-secondary hover:bg-secondary/80 transition-colors"
+                >
                   <Linkedin size={18} />
                 </a>
-                <a href="https://leetcode.com/u/CH_VAMSIPRANEETH/" target="_blank" rel="noopener noreferrer" className="p-2 rounded-full bg-secondary hover:bg-secondary/80 transition-colors">
+                <a
+                  href="https://leetcode.com/u/CH_VAMSIPRANEETH/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="p-2 rounded-full bg-secondary hover:bg-secondary/80 transition-colors"
+                >
                   <Code2 size={18} />
                 </a>
               </div>

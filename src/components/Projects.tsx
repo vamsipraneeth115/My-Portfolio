@@ -1,16 +1,16 @@
 import { motion } from "framer-motion";
-import { Github, ExternalLink } from "lucide-react";
+import { Github } from "lucide-react";
 
 const projects = [
   {
     title: "FinGaze",
-    desc: "An AI-driven stock portfolio risk classifier leveraging Deep Reinforcement Learning (FinRL) to categorize stocks into risk tiers and optimize portfolio allocation with real-time data visualization.",
+    desc: "An AI-driven stock portfolio risk classifier that uses Deep Reinforcement Learning to group stocks by risk tier and support smarter portfolio decisions with clear visual insights.",
     tech: ["Python", "FinRL", "Reinforcement Learning", "Data Visualization"],
     github: "https://github.com/vamsipraneeth115/Fin-Gaze.git",
   },
   {
     title: "PresentationCore",
-    desc: "An AI-powered presentation analyzer that evaluates slide design, content quality, and delivery patterns using ML models. Features React frontend with FastAPI backend and PostgreSQL storage.",
+    desc: "An AI-powered presentation analyzer that evaluates slide design, content quality, and delivery patterns using machine learning, with a React frontend, FastAPI backend, and PostgreSQL database.",
     tech: ["React", "FastAPI", "PostgreSQL", "Machine Learning"],
     github: "https://github.com/vamsipraneeth115/Presentationscore.git",
   },
@@ -28,7 +28,8 @@ const Projects = () => (
         Featured Projects
       </motion.h2>
       <p className="text-muted-foreground text-center mb-12 max-w-lg mx-auto">
-        A selection of projects I've built — from AI-powered tools to full-stack applications.
+        A selection of projects that reflect my interest in AI, backend systems,
+        and practical full-stack development.
       </p>
 
       <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
@@ -46,12 +47,22 @@ const Projects = () => (
             <p className="text-sm text-muted-foreground mb-4 flex-1">{p.desc}</p>
             <div className="flex flex-wrap gap-1.5 mb-4">
               {p.tech.map((t) => (
-                <span key={t} className="px-2 py-1 rounded text-xs bg-secondary text-secondary-foreground">{t}</span>
+                <span
+                  key={t}
+                  className="px-2 py-1 rounded text-xs bg-secondary text-secondary-foreground"
+                >
+                  {t}
+                </span>
               ))}
             </div>
             <div className="flex gap-3">
-              <a href={p.github} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1.5 text-sm text-muted-foreground hover:text-foreground transition-colors">
-                <Github size={16} /> Code
+              <a
+                href={p.github}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1.5 text-sm text-muted-foreground hover:text-foreground transition-colors"
+              >
+                <Github size={16} /> View Code
               </a>
             </div>
           </motion.div>

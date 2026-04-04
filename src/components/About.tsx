@@ -2,9 +2,21 @@ import { motion } from "framer-motion";
 import { Code2, Brain, Server } from "lucide-react";
 
 const strengths = [
-  { icon: Code2, title: "Full-Stack Development", desc: "Building end-to-end applications with React, FastAPI, and modern web technologies." },
-  { icon: Brain, title: "AI / ML Enthusiast", desc: "Exploring reinforcement learning, NLP, and intelligent automation systems." },
-  { icon: Server, title: "Problem Solving & DSA", desc: "Strong algorithmic thinking with expertise in data structures and competitive coding." },
+  {
+    icon: Code2,
+    title: "Full-Stack Development",
+    desc: "Building end-to-end applications with React, FastAPI, and modern web technologies.",
+  },
+  {
+    icon: Brain,
+    title: "AI / ML Enthusiast",
+    desc: "Exploring reinforcement learning, NLP, and intelligent automation systems.",
+  },
+  {
+    icon: Server,
+    title: "Problem Solving & DSA",
+    desc: "Strong algorithmic thinking backed by data structures, system fundamentals, and consistent coding practice.",
+  },
 ];
 
 const About = () => (
@@ -18,9 +30,11 @@ const About = () => (
       >
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">About Me</h2>
         <p className="text-muted-foreground text-center max-w-2xl mx-auto mb-12">
-          I'm a passionate Computer Science student at Dayananda Sagar College of Engineering with a CGPA of 9.44.
-          I love building real-world solutions — from AI-powered stock risk classifiers to intelligent presentation analyzers.
-          When I'm not coding, you'll find me exploring new tech, solving DSA problems, or diving into research papers.
+          I'm a passionate Computer Science student at Dayananda Sagar College of
+          Engineering with a CGPA of 9.44. I enjoy building real-world software,
+          from AI-powered stock risk classifiers to intelligent presentation
+          analyzers. When I'm not coding, I'm usually exploring new technologies,
+          solving DSA problems, or learning through hands-on projects and research.
         </p>
       </motion.div>
 
