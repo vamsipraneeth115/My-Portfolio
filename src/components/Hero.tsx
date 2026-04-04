@@ -6,7 +6,7 @@ import ParticleBackground from "./ParticleBackground";
 const titles = [
   "Software Developer",
   "Problem Solver",
-  "AI Enthusiast",
+  "AI/ML Enthusiast",
   "Full-Stack Builder",
 ];
 
