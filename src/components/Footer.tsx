@@ -8,7 +8,7 @@ const Footer = () => (
       </p>
       <div className="flex gap-3">
         <a
-          href="mailto:ccvp@example.com"
+          href="mailto:ccvp2006@gmail.com"
           className="text-muted-foreground hover:text-foreground transition-colors"
         >
           <Mail size={16} />

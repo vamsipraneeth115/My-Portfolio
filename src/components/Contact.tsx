@@ -1,16 +1,10 @@
-import { useState } from "react";
 import { motion } from "framer-motion";
 import { Send, Mail, Code2, Github, Linkedin, Phone } from "lucide-react";
 
+const CONTACT_EMAIL = "ccvp2006@gmail.com";
+const FORM_ACTION = `https://formsubmit.co/${CONTACT_EMAIL}`;
+
 const Contact = () => {
-  const [form, setForm] = useState({ name: "", email: "", message: "" });
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    alert("Thanks for reaching out! (This is a UI-only demo)");
-    setForm({ name: "", email: "", message: "" });
-  };
-
   return (
     <section id="contact" className="py-20 md:py-28 bg-secondary/30">
       <div className="container mx-auto px-4">
@@ -33,29 +27,30 @@ const Contact = () => {
           viewport={{ once: true }}
           className="max-w-lg mx-auto"
         >
-          <form onSubmit={handleSubmit} className="space-y-4">
+          <form action={FORM_ACTION} method="POST" className="space-y-4">
+            <input type="hidden" name="_subject" value="New portfolio contact form submission" />
+            <input type="hidden" name="_template" value="table" />
+            <input type="text" name="_honey" className="hidden" tabIndex={-1} autoComplete="off" />
+
             <input
               type="text"
+              name="name"
               placeholder="Your Name"
               required
-              value={form.name}
-              onChange={(e) => setForm({ ...form, name: e.target.value })}
               className="w-full px-4 py-3 rounded-lg border border-border bg-card text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring"
             />
             <input
               type="email"
+              name="email"
               placeholder="Your Email"
               required
-              value={form.email}
-              onChange={(e) => setForm({ ...form, email: e.target.value })}
               className="w-full px-4 py-3 rounded-lg border border-border bg-card text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring"
             />
             <textarea
+              name="message"
               placeholder="Your Message"
               rows={5}
               required
-              value={form.message}
-              onChange={(e) => setForm({ ...form, message: e.target.value })}
               className="w-full px-4 py-3 rounded-lg border border-border bg-card text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring resize-none"
             />
             <button
@@ -65,6 +60,11 @@ const Contact = () => {
               <Send size={16} /> Send Message
             </button>
           </form>
+
+          <p className="text-center text-sm text-muted-foreground mt-4">
+            The first form submission requires confirming FormSubmit from an email
+            sent to {CONTACT_EMAIL}.
+          </p>
 
           <div className="mt-6 flex items-center justify-center gap-2 text-muted-foreground">
             <Phone size={18} />
@@ -79,7 +79,7 @@ const Contact = () => {
 
           <div className="flex items-center justify-center gap-4 mt-8">
             <a
-              href="mailto:ccvp@example.com"
+              href={`mailto:${CONTACT_EMAIL}`}
               className="p-3 rounded-full bg-card border border-border hover:border-primary/50 transition-colors"
             >
               <Mail size={18} className="text-muted-foreground" />
