@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { Send, Mail, Code2, Github, Linkedin } from "lucide-react";
+import { Send, Mail, Code2, Github, Linkedin, Phone } from "lucide-react";
 
 const Contact = () => {
   const [form, setForm] = useState({ name: "", email: "", message: "" });
@@ -64,6 +64,16 @@ const Contact = () => {
               <Send size={16} /> Send Message
             </button>
           </form>
+
+          <div className="mt-6 flex items-center justify-center gap-2 text-muted-foreground">
+            <Phone size={18} />
+            <a
+              href="tel:+917416052085"
+              className="transition-colors hover:text-primary"
+            >
+              +91 7416052085
+            </a>
+          </div>
 
           <div className="flex items-center justify-center gap-4 mt-8">
             <a href="mailto:ccvp@example.com" className="p-3 rounded-full bg-card border border-border hover:border-primary/50 transition-colors">
