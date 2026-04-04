@@ -14,6 +14,12 @@ const projects = [
     tech: ["React", "FastAPI", "PostgreSQL", "Machine Learning"],
     github: "https://github.com/vamsipraneeth115/Presentationscore.git",
   },
+  {
+    title: "Deep-Fake Detection System",
+    desc: "A MobileNet-based CNN trained for deep-fake detection using Kaggle video data, with dropout, batch normalization, and weight decay, deployed as a Streamlit app.",
+    tech: ["Python", "CNN", "MobileNet", "Streamlit"],
+    github: "https://github.com/vamsipraneeth115/Deep-Fake.git",
+  },
 ];
 
 const Projects = () => (
