@@ -15,6 +15,12 @@ const projects = [
     github: "https://github.com/vamsipraneeth115/Presentationscore.git",
   },
   {
+    title: "Disease Prediction DevOps Pipeline",
+    desc: "A disease prediction application packaged with Docker, deployed on Kubernetes, and automated through a Jenkins CI/CD pipeline to demonstrate reliable model delivery and cloud-native deployment practices.",
+    tech: ["Docker", "Kubernetes", "Jenkins", "CI/CD"],
+    github: "https://github.com/vamsipraneeth115/DEVOPS.git",
+  },
+  {
     title: "Deep-Fake Detection System",
     desc: "A MobileNet-based CNN trained for deep-fake detection using Kaggle video data, with dropout, batch normalization, and weight decay, deployed as a Streamlit app.",
     tech: ["Python", "CNN", "MobileNet", "Streamlit"],
@@ -35,7 +41,7 @@ const Projects = () => (
       </motion.h2>
       <p className="text-muted-foreground text-center mb-12 max-w-lg mx-auto">
         A selection of projects that reflect my interest in AI, backend systems,
-        and practical full-stack development.
+        DevOps, and practical full-stack development.
       </p>
 
       <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
