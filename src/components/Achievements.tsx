@@ -2,6 +2,12 @@ import { motion } from "framer-motion";
 import { Award } from "lucide-react";
 
 const items = [
+  {
+    title: "Google Cloud Skills Badge",
+    desc: "Google Cloud via Credly",
+    file: "https://www.credly.com/badges/f7e7474c-7406-4e31-86ef-139fa18a0db0/public_url",
+    cta: "View Badge",
+  },
   { title: "Web Development", desc: "Skill Vertex", file: "/web%20dev.jpeg" },
   {
     title: "Information Security A-Z",
@@ -24,7 +30,10 @@ const items = [
     desc: "NPTEL",
     file: "/nptel.jpeg",
   },
-];
+].map((item) => ({
+  cta: "View Certificate",
+  ...item,
+}));
 
 const Achievements = () => (
   <section id="achievements" className="py-20 md:py-28">
@@ -56,7 +65,7 @@ const Achievements = () => (
             </div>
             <h3 className="font-bold text-lg">{item.title}</h3>
             <p className="text-sm text-muted-foreground mt-1">{item.desc}</p>
-            <p className="text-sm text-primary mt-3">View Certificate</p>
+            <p className="text-sm text-primary mt-3">{item.cta}</p>
           </motion.a>
         ))}
       </div>
